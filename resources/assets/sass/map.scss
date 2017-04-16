@@ -1,9 +1,74 @@
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/leaflet/dist/leaflet";
+
+/* General */
+
 html, body {
     height: 100%;
     padding: 0;
     margin: 0;
 }
 
+/* Map */
+
 #map-container {
     height: 100%;
+    z-index: 100;
+}
+
+/* UI */
+#options-panel {
+    z-index: 250;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-family: arial;
+}
+
+#options-trigger {
+    min-width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+#options-panel #options-wrap {
+    display: none;
+    width: 200px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#options-panel #options-wrap h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Search UI */
+
+#ui-panel {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* width: 360px; - This needs uncommented when I implement the search bar */
+    z-index: 100;
+}
+
+#search-panel {
+    width: 300px;
+}
+
+#menu-trigger {
+    float: left;
+    margin-right: 5px;
+}
+
+/* Info Panel */
+
+#info-panel {
+    background-color: white;
+    padding: 5px;
 }
