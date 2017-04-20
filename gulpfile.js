@@ -12,5 +12,6 @@ elixir(mix => {
 });
 
 elixir(mix => {
-    mix.copy('node_modules/bootstrap-sass/assets/fonts/bootstrap', 'public/build/fonts/bootstrap');
+    mix.copy('node_modules/bootstrap-sass/assets/fonts/bootstrap', 'public/build/fonts/bootstrap')
+       .copy('node_modules/leaflet/dist/images', 'public/build/css/images');
 });
