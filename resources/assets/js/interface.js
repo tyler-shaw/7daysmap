@@ -14,6 +14,12 @@ $(document).ready(function() {
 
     $('#options-trigger').click(function() {
         $('#options-wrap').slideToggle();
+        var options_label = $(this).text();
+        if(options_label == 'Show Options') {
+            $(this).text('Hide Options').addClass('btn btn-success mb5');
+        } else {
+            $(this).text('Show Options').removeClass('btn btn-success mb5');
+        }
     });
 
     $('#info-panel').slideReveal({

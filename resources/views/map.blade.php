@@ -3,7 +3,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>7 Days to Die Map</title>
+    <meta name="description" content="Interactive world map for 7 Days to Die. Up-to-date with markers showing traders, caves, bomb shelters and more!">
+    <title>7 Days to Die Map - 7daysmap.com</title>
     <link rel="stylesheet" href="{{ elixir ('css/map.css') }}">
     {{-- Analytics Code Here --}}
 </head>
@@ -51,8 +52,8 @@
             <label><input id="tradersLayerToggle" type="checkbox"> Trader Posts</label>
             <label><input id="otherLayerToggle" type="checkbox"> Other</label>
         </div>
-        <div id="options-trigger">
-            Show Options
+        <div class="text-center">
+            <div id="options-trigger">Show Options</div>
         </div>
     </div>
 

@@ -3,6 +3,10 @@
 
 /* General */
 
+.mb5 {
+    margin-bottom: 5px;
+}
+
 html, body {
     height: 100%;
     padding: 0;
@@ -37,7 +41,7 @@ html, body {
 #options-panel #options-wrap {
     display: none;
     width: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     padding: 10px;
 }
 
