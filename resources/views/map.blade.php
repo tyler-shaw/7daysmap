@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>7 Days to Die Map</title>
     <link rel="stylesheet" href="{{ elixir ('css/map.css') }}">
     {{-- Analytics Code Here --}}
@@ -37,7 +38,7 @@
         <p>
             We've just launched, so please be patient as we add any missing markers
             and make various improvements to the map. If you have any suggestions, or
-            see any issues with the map - please <a href="#myModal" data-toggle="modal">reach out</a> and let me know.
+            see any issues with the map - please <a href="#contact-modal" data-toggle="modal">reach out</a> and let me know.
         </p>
     </div>
 
@@ -55,7 +56,7 @@
         </div>
     </div>
 
-    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div id="contact-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -70,19 +71,18 @@
                         Please use your actual email so I can respond if necessary. This form goes directly to me (the owner of the website).
                         I won't send you any unprovoked emails or add you to any kind of list.
                     </p>
-                    <form>
+                    <div id="alert-wrap"></div>
+                    <form id="contact-form">
                         <div class="form-group">
                             <label>Email</label>
-                            <input class="form-control" type="text">
+                            <input id="email" class="form-control" type="email" required>
                         </div>
-
                         <div class="form-group">
                             <label>Message</label>
-                            <textarea class="form-control" placeholder="Your message here.."></textarea>
+                            <textarea id="message" class="form-control" placeholder="Your message here.." required></textarea>
                         </div>
-
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-success">Send It!</button>
+                        <div class="form-group text-right">
+                            <button id="contact-submit" class="btn btn-success">Send It!</button>
                         </div>
                     </form>
                 </div>
