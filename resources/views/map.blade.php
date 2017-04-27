@@ -50,6 +50,10 @@
             and make various improvements to the map. If you have any suggestions, or
             see any issues with the map - please <a href="#contact-modal" data-toggle="modal">reach out</a> and let me know.
         </p>
+        <hr>
+        <div class="text-center">
+            <a class="btn btn-success mt5" href="#updates-modal" data-toggle="modal">Update Log</a>
+        </div>
     </div>
 
     <div id="options-panel" class="panel panel-primary">
@@ -66,11 +70,12 @@
         </div>
     </div>
 
-    <div id="contact-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div id="contact-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Contact</h4>
                 </div>
                 <div class="modal-body">
                     <p>
@@ -95,6 +100,27 @@
                             <button id="contact-submit" class="btn btn-success">Send It!</button>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="updates-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Map Updates</h4>
+                </div>
+                <div class="modal-body">
+                    <ul id="updates-list">
+                        <li>
+                            <strong>April 24, 2017</strong>
+                            <ul>
+                                <li>Initial public release 7daysmap.com!</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
