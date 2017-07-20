@@ -113,7 +113,18 @@
                     <h4 class="modal-title">Map Updates</h4>
                 </div>
                 <div class="modal-body">
+                    <p>
+                        As support for the website grows, I'll be implementing more features and updates.
+                        Alpha 16 support will be coming soon - thanks to everyone for their patience.
+                    </p>
                     <ul id="updates-list">
+                        <li>
+                            <strong>July 20, 2017</strong>
+                            <ul>
+                                <li>Added the update log.</li>
+                                <li>Fixed some issues with the contact form.</li>
+                            </ul>
+                        </li>
                         <li>
                             <strong>April 24, 2017</strong>
                             <ul>
