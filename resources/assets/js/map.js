@@ -29,40 +29,36 @@ var hash = new leaflet.Hash(surface);
 
 // Markers
 
-// Traders - Need trader names and coords for these locations
-var traderJoel = L.marker([62.89, -92.41]).bindPopup('<strong>Trader Joel</strong><br><br>teleport -1055 935');
-var traderHugh = L.marker([75.05, 126.03]).bindPopup('<strong>Trader Hugh</strong><br><br>teleport 1425 1325');
-var traderRekt = L.marker([7.49, 28.03]).bindPopup('<strong>Trader Rekt</strong><br><br>teleport 320 95');
-var traderJimmy = L.marker([-74.64, -69.60]).bindPopup('<strong>Trader Jimmy</strong><br><br>teleport -785 -1305');
-var traderBob = L.marker([-75.02, 90.87]).bindPopup('<strong>Trader Bob</strong><br><br>teleport 1020 -1320');
+// Traders
 var tradersLayer = leaflet.layerGroup([
-    traderJoel, traderHugh, traderRekt, traderJimmy, traderBob
+    L.marker([62.89, -92.41]).bindPopup('<strong>Trader Joel</strong><br><br>teleport -1055 935'),
+    L.marker([75.05, 126.03]).bindPopup('<strong>Trader Hugh</strong><br><br>teleport 1425 1325'),
+    L.marker([7.49, 28.03]).bindPopup('<strong>Trader Rekt</strong><br><br>teleport 320 95'),
+    L.marker([-74.64, -69.60]).bindPopup('<strong>Trader Jimmy</strong><br><br>teleport -785 -1305'),
+    L.marker([-75.02, 90.87]).bindPopup('<strong>Trader Bob</strong><br><br>teleport 1020 -1320'),
 ]);
 
-var pf5 = L.marker([40.17, -83.14]).bindPopup('<strong>Cave</strong>');
-var w12 = L.marker([-66.68, -66.00]).bindPopup('<strong>Cave</strong>');
-var w14 = L.marker([-54.18, -127.74]).bindPopup('<strong>Cave</strong>');
-var d13 = L.marker([-24.44, 44.64]).bindPopup('<strong>Cave</strong>');
-var d21 = L.marker([-66.33, 87.27]).bindPopup('<strong>Cave</strong>');
-var snowCave = L.marker([83.82, 75.80]).bindPopup('<strong>Cave</strong>');
 var cavesLayer = leaflet.layerGroup([
-    pf5, w12, w14, d13, d21, snowCave
+    L.marker([40.17, -83.14]).bindPopup('<strong>Cave</strong>'),
+    L.marker([-66.68, -66.00]).bindPopup('<strong>Cave</strong>'),
+    L.marker([-54.18, -127.74]).bindPopup('<strong>Cave</strong>'),
+    L.marker([-24.44, 44.64]).bindPopup('<strong>Cave</strong>'),
+    L.marker([-66.33, 87.27]).bindPopup('<strong>Cave</strong>'),
+    L.marker([83.82, 75.80]).bindPopup('<strong>Cave</strong>'),
 ]);
 
-var snowAC = L.marker([79.95, 111.79]).bindPopup('<strong>Army Camp</strong>');
-var burntForestAC = L.marker([3.82, 131.70]).bindPopup('<strong>Army Camp</strong>');
-var plainsAC = L.marker([78.94, -71.85]).bindPopup('<strong>Army Camp</strong>');
-var desertBarracks = L.marker([-79.82, 38.54]).bindPopup('<strong>Army Barracks</strong>');
 var armyBasesLayer = leaflet.layerGroup([
-    snowAC, burntForestAC, plainsAC, desertBarracks
+    L.marker([79.95, 111.79]).bindPopup('<strong>Army Camp</strong>'),
+    L.marker([3.82, 131.70]).bindPopup('<strong>Army Camp</strong>'),
+    L.marker([78.94, -71.85]).bindPopup('<strong>Army Camp</strong>'),
+    L.marker([-79.82, 38.54]).bindPopup('<strong>Army Barracks</strong>'),
 ]);
 
-var mp1 = L.marker([81.99, -92.50]).bindPopup('<strong>House</strong>');
-var mp7 = L.marker([79.38, -103.09]).bindPopup('<strong>House</strong>');
-var mp8 = L.marker([77.06, -55.37]).bindPopup('<strong>House</strong>');
-var mp9 = L.marker([83.72, -68.55]).bindPopup('<strong>House</strong>');
 var housesLayer = leaflet.layerGroup([
-    mp1, mp7, mp8, mp9
+    L.marker([81.99, -92.50]).bindPopup('<strong>House</strong>'),
+    L.marker([79.38, -103.09]).bindPopup('<strong>House</strong>'),
+    L.marker([77.06, -55.37]).bindPopup('<strong>House</strong>'),
+    L.marker([83.72, -68.55]).bindPopup('<strong>House</strong>'),
 ]);
 
 // Misc Markers
@@ -162,6 +158,7 @@ var d17 = L.marker([-32.76, 152.57]).bindPopup('<strong>Old West City</strong>')
 var d18 = L.marker([-26.11, 132.62]).bindPopup('<strong>Camp</strong>');
 var d19 = L.marker([-68.36, 147.74]).bindPopup('<strong>Oreally Auto Parts</strong>');
 var d20 = L.marker([-68.30, 116.41]).bindPopup('<strong>Hotel</strong>');
+var d21 = L.marker([-72.31, 63.28]).bindPopup('<strong>Canyon Mine</strong>');
 //var d = L.marker([]).bindPopup('<strong></strong>');
 
 var miscLayer = leaflet.layerGroup([
@@ -171,11 +168,11 @@ var miscLayer = leaflet.layerGroup([
     pf1, pf2, pf3, pf4,
     s1, s2, s3, s4, s5,
     w1, w2, w3, w4, w5, w6, w7, w8, w9, w10, w11, w13, w15, w16, w17, w18, w19, w20,
-    d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d14, d15, d16, d17, d18, d19, d20,
+    d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d14, d15, d16, d17, d18, d19, d20, d21,
 ]);
 //surface.addLayer(miscLayer);
 
-
+    // This crap should be in the interface file because it handles interface interactions
 $(document).ready(function() {
     // Need a better way to handle this layer management
     $('#tradersLayerToggle').change(function() {
