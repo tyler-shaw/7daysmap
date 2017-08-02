@@ -11,7 +11,7 @@ var surface = leaflet.map('map-container', {
 //surface.setMaxBounds([[-90, -180],[90, 180]]);
 surface.setView([0, 0], 4);
 
-var surfaceLayer = leaflet.tileLayer('/map/tiles/{z}/{x}/{y}.jpeg', {
+var surfaceLayer = leaflet.tileLayer('https://7daysmap-543f.kxcdn.com/tiles/alpha-15-navezgane/{z}/{x}/{y}.jpeg', {
     maxZoom: 5,
     maxNativeZoom: 4,
     minZoom: 2,
