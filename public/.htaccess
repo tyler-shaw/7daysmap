@@ -6,6 +6,9 @@
     RewriteEngine On
     RewriteBase /
 
+    # Require https
+    Header always set Strict-Transport-Security "max-age=63072000;"
+
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)/$ /$1 [L,R=301]
