@@ -6,7 +6,10 @@
     RewriteEngine On
     RewriteBase /
 
-    # Require https
+    # Redirect to https
+    RewriteCond %{HTTPS} !^on$
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R,L]
+    # Tell browser to use https in the future
     Header always set Strict-Transport-Security "max-age=63072000;"
 
     # Redirect Trailing Slashes If Not A Folder...
