@@ -57,6 +57,11 @@
     </div>
 
     <div id="options-panel" class="panel panel-primary">
+        <strong>Select Map Version</strong><br>
+        <select id="map-version">
+            <option selected value="alpha16navezgane">Alpha 16 Navezgane</option>
+            <option value="alpha15navezgane">Alpha 15 Navezgane</option>
+        </select>
         <div id="options-wrap" class="panel-body">
             <h4>Options</h4>
             <label><input id="armyBasesLayerToggle" type="checkbox"> Army Bases</label>

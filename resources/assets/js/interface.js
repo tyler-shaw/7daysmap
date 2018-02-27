@@ -3,6 +3,8 @@ var $ = require('jquery');
 window.jQuery = $;
 var slideReveal = require('./vendor/slideReveal');
 var bootstrap = require ('bootstrap');
+var initAlpha15 = require('./alpha15navezgane');
+var initAlpha16 = require('./alpha16navezgane');
 
 $(document).ready(function() {
 
@@ -11,6 +13,22 @@ $(document).ready(function() {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
     })
+
+    $('#map-version').change(function() {
+        window.surface.remove();
+        var mapVersion = $(this).val();
+        switch (mapVersion) {
+            case 'alpha15navezgane':
+                initAlpha15();
+                break;
+            case 'alpha16navezgane':
+                initAlpha16();
+                break;
+            default:
+                initAlpha16();
+                alert('Unknown map version - displaying Alpha 16 Navezgane.');
+        }
+    });
 
     $('#options-trigger').click(function() {
         $('#options-wrap').slideToggle();
