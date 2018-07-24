@@ -28,6 +28,8 @@ $(document).ready(function() {
                 initAlpha16();
                 alert('Unknown map version - displaying Alpha 16 Navezgane.');
         }
+        // Uncheck all map marker options
+        $('#options-wrap').find('input:checkbox').prop('checked', false);
     });
 
     $('#options-trigger').click(function() {
