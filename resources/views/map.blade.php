@@ -119,11 +119,12 @@
                 </div>
                 <div class="modal-body">
                     <p>
-                        As support for the website grows, I'll be implementing more features and updates.
+                        As support for the website grows, more features will be added. Thanks for all of the support
+                        so far!
                     </p>
                     <ul id="updates-list">
                         <li>
-                            <strong>UNRELEASED</strong>
+                            <strong>July 24, 2018</strong>
                             <ul>
                                 <li>Added support for switching map versions.</li>
                                 <li>Added Alpha 16 map.</li>
