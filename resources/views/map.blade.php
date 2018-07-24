@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="description" content="Interactive world map for 7 Days to Die. Up-to-date with markers showing traders, caves, bomb shelters and more!">
+    <meta name="description" content="Interactive world map for 7 Days to Die Alpha 15 & Alpha 16. Up-to-date with markers showing traders, caves, bomb shelters and more!">
     <title>7 Days to Die Map - 7daysmap.com</title>
     <link rel="stylesheet" href="{{ elixir ('css/map.css') }}">
     @if(config('app.env') == 'production')
@@ -57,7 +57,7 @@
     </div>
 
     <div id="options-panel" class="panel panel-primary">
-        <strong>Select Map Version</strong><br>
+        <h4 class="text-center">Select Map</h4>
         <select id="map-version">
             <option selected value="alpha16navezgane">Alpha 16 Navezgane</option>
             <option value="alpha15navezgane">Alpha 15 Navezgane</option>
@@ -120,9 +120,15 @@
                 <div class="modal-body">
                     <p>
                         As support for the website grows, I'll be implementing more features and updates.
-                        Alpha 16 support will be coming very soon - thanks to everyone for their patience.
                     </p>
                     <ul id="updates-list">
+                        <li>
+                            <strong>UNRELEASED</strong>
+                            <ul>
+                                <li>Added support for switching map versions.</li>
+                                <li>Added Alpha 16 map.</li>
+                            </ul>
+                        </li>
                         <li>
                             <strong>August 2, 2017</strong>
                             <ul>
