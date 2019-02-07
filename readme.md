@@ -1,27 +1,32 @@
-# Laravel PHP Framework
+# 7DaysMap.com
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+7daysmap.com is the top interactive map for 7 Days to Die. Developed for use by the community, it's now open sourced with the hope
+that the community can improve it. Below you'll find basic documentation on the project along with information on how you
+can help contribute to the development of the map.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+## Technical Details
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+The site is extremely simple consisting of only a couple routes and views - with the bulk of the content beings the interactive
+map on the front end. Here are some of the major technologies used in the project:
 
-## Official Documentation
+- Laravel 5.3 on the back end.
+- Leaflet for the map.
+- Laravel Elixir for asset compilation, etc.
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+Tiles for the various maps are hosted on a CDN and will need manually added by the project owner as new map versions are released.
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+Thank you for considering contributing to the project. We'll gladly accept any pull requests improving the existing the project,
+adding new markers, or updating the map with new versions as alpha are released. If there's a change you're eagar to see then
+please feel free to submit and PR and they'll be reviewed promptly.
+
+Another great way to contribute is by opening issues should find any bugs or have any suggestions.
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within the project, please send an e-mail to Tyler Shaw at tshaw0813@gmail.com. All security vulnerabilities will be promptly addressed.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+TODO
