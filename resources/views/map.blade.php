@@ -5,7 +5,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="Interactive world map for 7 Days to Die Alpha 15 & Alpha 16. Up-to-date with markers showing traders, caves, bomb shelters and more!">
     <title>7 Days to Die Map - 7daysmap.com</title>
-    <link rel="stylesheet" href="{{ elixir ('css/map.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/map.css') }}">
     @if(config('app.env') == 'production')
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -155,6 +155,6 @@
         </div>
     </div>
 
-    <script src="{{ elixir('js/app.js') }}"></script>
+    <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
