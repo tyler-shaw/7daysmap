@@ -29,4 +29,4 @@ If you discover a security vulnerability within the project, please send an e-ma
 
 ## License
 
-TODO
+This project is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
