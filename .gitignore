@@ -8,3 +8,6 @@ Homestead.yaml
 /public/css
 /public/js
 /public/build
+/public/mix-manifest.json
+/public/fonts/vendor
+/public/images/vendor
