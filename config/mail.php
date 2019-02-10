@@ -2,6 +2,8 @@
 
 return [
 
+    'contact_email' => env('CONTACT_EMAIL', 'contact@example.com'),
+
     /*
     |--------------------------------------------------------------------------
     | Mail Driver

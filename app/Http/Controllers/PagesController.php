@@ -20,7 +20,7 @@ class PagesController extends Controller
                     'from' => $request->input('email')
                 ],
                 function($message) use($request) {
-                    $message->to('tshaw0813@gmail.com', '7daysmap.com');
+                    $message->to(config('mail.contact_email'), '7daysmap.com');
                     $message->subject('7daysmap.com Contact Form');
                     $message->replyTo($request->input('email'));
                     $message->from('contact-emailer@7daysmap.com', '7daysmap.com Contact Form');
