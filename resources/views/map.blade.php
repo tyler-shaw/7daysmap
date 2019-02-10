@@ -70,11 +70,7 @@
         </select>
         <div id="options-wrap" class="panel-body">
             <h4>Options</h4>
-            <label><input id="armyBasesLayerToggle" type="checkbox"> Army Bases</label>
-            <label><input id="cavesLayerToggle" type="checkbox"> Caves</label>
-            <label><input id="housesLayerToggle" type="checkbox"> Houses</label>
-            <label><input id="tradersLayerToggle" type="checkbox"> Trader Posts</label>
-            <label><input id="otherLayerToggle" type="checkbox"> Other</label>
+            <div id="layer-options"></div>
         </div>
         <div class="text-center">
             <div id="options-trigger">Show Options</div>

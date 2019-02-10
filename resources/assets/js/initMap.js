@@ -57,43 +57,25 @@ module.exports = function(config) {
         });
     });
 
-    // This crap should be in the interface file because it handles interface interactions
+    // Create and manage the layer checkboxes for this map.
     $(document).ready(function() {
-        // Need a better way to handle this layer management
-        $('#tradersLayerToggle').change(function() {
-            if($(this).is(':checked')) {
-                surface.addLayer(layers['traders']);
-            } else {
-                surface.removeLayer(layers['traders']);
-            }
-        });
-        $('#cavesLayerToggle').change(function() {
-            if($(this).is(':checked')) {
-                surface.addLayer(layers['caves']);
-            } else {
-                surface.removeLayer(layers['caves']);
-            }
-        });
-        $('#armyBasesLayerToggle').change(function() {
-            if($(this).is(':checked')) {
-                surface.addLayer(layers['armyBases']);
-            } else {
-                surface.removeLayer(layers['armyBases']);
-            }
-        });
-        $('#housesLayerToggle').change(function() {
-            if($(this).is(':checked')) {
-                surface.addLayer(layers['houses']);
-            } else {
-                surface.removeLayer(layers['houses']);
-            }
-        });
-        $('#otherLayerToggle').change(function() {
-            if($(this).is(':checked')) {
-                surface.addLayer(layers['other']);
-            } else {
-                surface.removeLayer(layers['other']);
-            }
+        let wrap = $('#layer-options');
+        wrap.empty();
+        Object.keys(config.layers).forEach(function(layerId) {
+            let layerName = config.layers[layerId];
+            wrap.append(
+                $('<label>').append(
+                    $('<input>').attr('id', layerId + 'Layer').attr('type', 'checkbox')
+                ).append(' ' + layerName)
+            );
+            // Bind an event for this checkbox.
+            $('#' + layerId + 'Layer').change(function() {
+                if($(this).is(':checked')) {
+                    surface.addLayer(layers[layerId]);
+                } else {
+                    surface.removeLayer(layers[layerId]);
+                }
+            });
         });
     });
 }
