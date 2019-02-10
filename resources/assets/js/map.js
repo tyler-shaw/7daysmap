@@ -1,7 +1,8 @@
-var initAlpha16 = require('./alpha16navezgane');
+var initMap = require('./initMap');
+let configs = require('./maps');
 
 // By default, we'll display alpha 16
-initAlpha16();
+initMap(configs['alpha16navezgane']);
 
 
 

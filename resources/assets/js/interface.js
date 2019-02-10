@@ -1,10 +1,10 @@
-var $ = require('jquery');
+let $ = require('jquery');
 // Gotta do this garbage for bootstrap
 window.jQuery = $;
-var slideReveal = require('./vendor/slideReveal');
-var bootstrap = require ('bootstrap');
-var initAlpha15 = require('./alpha15navezgane');
-var initAlpha16 = require('./alpha16navezgane');
+let configs = require('./maps');
+let slideReveal = require('./vendor/slideReveal');
+let bootstrap = require ('bootstrap');
+let initMap = require('./initMap');
 
 $(document).ready(function() {
 
@@ -16,16 +16,16 @@ $(document).ready(function() {
 
     $('#map-version').change(function() {
         window.surface.remove();
-        var mapVersion = $(this).val();
+        let mapVersion = $(this).val();
         switch (mapVersion) {
             case 'alpha15navezgane':
-                initAlpha15();
+                initMap(configs['alpha15navezgane']);
                 break;
             case 'alpha16navezgane':
-                initAlpha16();
+                initMap(configs['alpha16navezgane']);
                 break;
             default:
-                initAlpha16();
+                initMap(configs['alpha16navezgane']);
                 alert('Unknown map version - displaying Alpha 16 Navezgane.');
         }
         // Uncheck all map marker options
@@ -34,7 +34,7 @@ $(document).ready(function() {
 
     $('#options-trigger').click(function() {
         $('#options-wrap').slideToggle();
-        var options_label = $(this).text();
+        let options_label = $(this).text();
         if(options_label == 'Show Options') {
             $(this).text('Hide Options').addClass('btn btn-success mb5');
         } else {
@@ -79,7 +79,7 @@ $(document).ready(function() {
                 }
                 // Display a message
                 $('#alert-wrap').html('');
-                var classes = 'alert alert-dismissible';
+                let classes = 'alert alert-dismissible';
                 if(data.success) {
                     classes += ' alert-success';
                 } else {
