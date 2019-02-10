@@ -23,6 +23,18 @@ please feel free to submit and PR and they'll be reviewed promptly.
 
 Another great way to contribute is by opening issues should find any bugs or have any suggestions.
 
+### Website Setup
+
+Setting up the project is fairly simple. The project isn't using a database at the moment, so you'll only need to follow a couple steps.
+Since the project isn't using a database, you'll mainly just need to copy the `.env.example` file and update it for your environment.
+We're not using a lot of the features that this offers, so setting the `APP_KEY` and the mail settings should be all you need to do.
+
+### Other Notes
+
+If you wish to add a new version of the map, you'll need to add the configuration for the map and it's markers in the appropriate script. You can see `resource/assets/js/maps.js` for the current map versions and an example of how their config is laid out.
+
+Tiles must be 256px by 256px. If you want to discuss adding a new version of the map, then please reach out. Currently, all tiles are hosted on my personal CDN account and I'll need to upload any new ones. If this becomes a large inconvenience we can look for a new solution.
+
 ## Security Vulnerabilities
 
 If you discover a security vulnerability within the project, please send an e-mail to Tyler Shaw at tshaw0813@gmail.com. All security vulnerabilities will be promptly addressed.

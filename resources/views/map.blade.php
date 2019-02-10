@@ -54,6 +54,12 @@
         <div class="text-center">
             <a class="btn btn-success mt5" href="#updates-modal" data-toggle="modal">Update Log</a>
         </div>
+        <hr>
+        <div class="text-center">
+            7daysmap.com is an open source project.<br>
+            <img src="/images/github.png" width="32" height="32"><br>
+            <a href="https://github.com/tyler-shaw/7daysmap" target="_blank">Contribute on GitHub</a>
+        </div>
     </div>
 
     <div id="options-panel" class="panel panel-primary">
