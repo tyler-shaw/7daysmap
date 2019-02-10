@@ -126,6 +126,14 @@
                     </p>
                     <ul id="updates-list">
                         <li>
+                            <strong>February 10, 2019</strong>
+                            <ul>
+                                <li>Tons of technical clean up, allowing for easier changes in the future.</li>
+                                <li>7 Days Map is now Open Source! You can find the code and make
+                                    contributions on <a href="https://github.com/tyler-shaw/7daysmap" target="_blank">GitHub</a>!</li>
+                            </ul>
+                        </li>
+                        <li>
                             <strong>July 24, 2018</strong>
                             <ul>
                                 <li>Added support for switching map versions.</li>
