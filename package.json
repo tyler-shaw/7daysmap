@@ -17,7 +17,6 @@
     "laravel-mix": "^4.0.14",
     "leaflet": "^1.0.3",
     "leaflet-hash": "^0.2.1",
-    "lodash": "^4.17.13",
     "resolve-url-loader": "^2.3.1",
     "sass": "^1.17.0",
     "sass-loader": "^7.1.0",
