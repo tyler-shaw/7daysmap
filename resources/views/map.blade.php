@@ -127,6 +127,12 @@
                     </p>
                     <ul id="updates-list">
                         <li>
+                            <strong>January 29th, 2020</strong>
+                            <ul>
+                                <li>Various technical updates to technology used for this project.</li>
+                            </ul>
+                        </li>
+                        <li>
                             <strong>February 10, 2019</strong>
                             <ul>
                                 <li>Tons of technical clean up, allowing for easier changes in the future.</li>
