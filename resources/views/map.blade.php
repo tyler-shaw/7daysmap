@@ -5,6 +5,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="Interactive world map for 7 Days to Die Alpha 15 & Alpha 16. Up-to-date with markers showing traders, caves, bomb shelters and more!">
     <title>7 Days to Die Map - 7daysmap.com</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ mix('css/map.css') }}">
     @if(config('app.env') == 'production')
         <script>
