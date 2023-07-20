@@ -1,2 +1,0 @@
-require('./map')
-require('./interface')
