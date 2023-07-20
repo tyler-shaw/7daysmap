@@ -1,0 +1,125 @@
+.mb5 {
+    margin-bottom: 5px;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Map */
+
+#map-container {
+    height: 100%;
+    z-index: 100;
+}
+
+/* UI */
+#options-panel {
+    z-index: 250;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-family: arial;
+    padding: 0 5px;
+}
+
+#options-trigger {
+    min-width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+#options-panel #options-wrap {
+    display: none;
+    width: 200px;
+    margin-bottom: 5px;
+    padding: 5px 5px;
+}
+
+#options-panel #options-wrap h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#options-wrap label {
+    display: block;
+}
+
+#map-version {
+    width: 100%;
+}
+
+/* Search UI */
+
+#ui-panel {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* width: 360px; - This needs uncommented when I implement the search bar */
+    z-index: 100;
+}
+
+#search-panel {
+    width: 300px;
+}
+
+#menu-trigger {
+    float: left;
+    margin-right: 5px;
+}
+
+/* Info Panel */
+
+#info-panel {
+    background-color: white;
+    padding: 5px;
+}
+
+/* Content */
+
+.leaflet-popup-content {
+    text-align: center;
+}
+
+/* Info Panel */
+
+#info-panel {
+    background: url('/images/info-panel-bg.png') no-repeat;
+    background-position: center bottom;
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#logo-wrapper {
+    text-align: center;
+    padding-top: 15px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#logo-wrapper img {
+    display: inline-block;
+}
+
+#info-panel hr {
+    margin: 5px;
+}
+
+#info-panel p {
+    padding: 5px;
+}
+
+#updates-list {
+    list-style-type: none;
+    padding-left: 0;
+}
